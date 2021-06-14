@@ -1,11 +1,11 @@
 {
-  "name": "npm-font-size-sass",
-  "version": "1.1.0",
-  "description": "Dynamic font-size in Web site using SASS",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"No test specified\""
-  },
-  "author": "Ahmed Samir",
-  "license": "ISC"
+    "name": "font-size-sass",
+    "version": "1.1.0",
+    "description": "Dynamic font-size in Web site using SASS",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"No test specified\""
+    },
+    "author": "Ahmed Samir",
+    "license": "ISC"
 }
