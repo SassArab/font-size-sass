@@ -1,1 +1,7 @@
-$goldenRatio: 1.6 !default;
+// $goldenRatio: 1.6 !default;
+
+$min_width: 320px; // min Screen width
+$max_width: 1200px; // max Screen width
+
+$min_font: 16px; // Font-size in min Screen width
+$max_font: 28px; // Font-size in max Screen width

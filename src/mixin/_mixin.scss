@@ -1,4 +1,24 @@
-@mixin font-size($sizeValue: $goldenRatio) {
-    font-size: ($sizeValue * 10) + px;
-    font-size: $sizeValue + rem;
+@import '../function/function';
+
+
+@mixin font-size($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $unit_1: unit($min-vw);
+    $unit_2: unit($max-vw);
+    $unit_3: unit($min-font-size);
+    $unit_4: unit($max-font-size);
+  
+    @if $unit_1 == $unit_2 and $unit_1 == $unit_3 and $unit_1 == $unit_4 {
+        & {
+            font-size: $min-font-size;
+            @media screen and (min-width: $min-vw) {
+                font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+            }
+    
+            @media screen and (min-width: $max-vw) {
+                font-size: $max-font-size;
+            }
+        }
+    }
 }
+
+

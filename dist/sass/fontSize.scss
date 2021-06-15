@@ -1,0 +1,7 @@
+@import '../../src/variable/variable';
+@import '../../src/mixin/mixin';
+
+
+html {
+    @include font-size($min_width, $max_width, $min_font, $max_font);
+}   
