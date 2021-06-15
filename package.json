@@ -7,8 +7,5 @@
         "test": "echo \"No test specified\""
     },
     "author": "Ahmed Samir",
-    "license": "ISC",
-    "files": [
-        "dist/_fontSize.scss"
-    ]
+    "license": "ISC"
 }
