@@ -8,6 +8,12 @@ It is very cumbersome to write the font size in all screen sizes in order to be 
 
 ## How to install
 
+Use the package manager [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) to install font-size-sass.
+
+```bash
+npm i font-size-sass
+```
+
 ## How to use
 ```
 @import '../node_modules/font-size-sass/dist/css/fontSize.css'
