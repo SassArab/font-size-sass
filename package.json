@@ -6,6 +6,27 @@
     "scripts": {
         "test": "echo \"No test specified\""
     },
-    "author": "Ahmed Samir",
-    "license": "ISC"
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SassArab/font-size-sass.git"
+    },
+    "author": {
+        "name": "Ahmed Samir",
+        "email": "samierahmed37@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/SassArab/font-size-sass/issues"
+    },
+    "homepage": "https://github.com/SassArab/font-size-sass",
+    "keywords": [
+        "sass",
+        "font-size",
+        "responsive",
+        "media-query",
+        "query",
+        "media",
+        "size",
+        "font"
+    ]
 }
