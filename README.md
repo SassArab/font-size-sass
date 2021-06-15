@@ -1,4 +1,4 @@
-# font-size-sass [![Build Status](https://travis-ci.org/eduardoboucas/include-media.svg?branch=master)](https://travis-ci.org/eduardoboucas/include-media)
+# font-size-sass
 > Dynamic font-size in Web site using SASS
 
 
