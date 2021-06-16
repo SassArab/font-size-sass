@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+# font-size-sass
+> 
+> Dynamic font-size in Web site using SASS
+> 
 
-You can use the [editor on GitHub](https://github.com/SassArab/font-size-sass/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## Why?
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+It is very cumbersome to write the font size in all screen sizes in order to be responsive, so I created this library to help solve this problem somewhat.
 
-### Markdown
+## How to install
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Use the package manager [npm](https://docs.npmjs.com/cli/v7/configuring-npm/install) to install font-size-sass.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+npm i font-size-sass
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## How to use
+```
+@import '../node_modules/font-size-sass/dist/css/fontSize.css'
+```
+### For Custom 
+```
+@import '../node_modules/font-size-sass/dist/sass/fontSize.scss'
+```
+```
+# and use this variable with change it value if u need.
 
-### Jekyll Themes
+$min_width: 320px; // min Screen width
+$max_width: 1200px; // max Screen width
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SassArab/font-size-sass/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+$min_font: 16px; // Font-size in min Screen width
+$max_font: 28px; // Font-size in max Screen width
 
-### Support or Contact
+```
+```
+# Then put this in the header of the main style file.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+html {
+    @include font-size($min_width, $max_width, $min_font, $max_font);
+}
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## The authors
+**font-size-sass** was created by [Ahmed Samir](https://www.facebook.com/ahmed.azam.102)
+
+## License
+This project is licensed under the [terms of the MIT license](https://github.com/SassArab/font-size-sass/blob/main/LICENSE.md).
