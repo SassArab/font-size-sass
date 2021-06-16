@@ -1,7 +1,6 @@
 # font-size-sass
 > Dynamic font-size in Web site using SASS
 
-
 ## Why?
 
 It is very cumbersome to write the font size in all screen sizes in order to be responsive, so I created this library to help solve this problem somewhat.
