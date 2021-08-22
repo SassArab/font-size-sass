@@ -1,6 +1,6 @@
 {
     "name": "font-size-sass",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "Dynamic font-size in Web site using SASS",
     "main": "index.js",
     "scripts": {
